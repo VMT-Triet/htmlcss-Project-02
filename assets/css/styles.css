@@ -91,3 +91,97 @@ a {
     background: #171100;
     line-height: 1.75;
 }
+
+/* ======== Hero ======== */
+.hero {
+    padding-top: 64px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .image img {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero .texts {
+    padding-top: 128px;
+    margin-left: 130px;
+    width: 470px;
+}
+
+.hero .texts .title {
+    color: #171100;
+    font-family: Sen, sans-serif;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+}
+
+.hero .texts .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero .texts .row-top {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .texts .hero-btn {
+    display: inline-block;
+    width: 180px;
+    height: 64px;
+    border-radius: 32px;
+    padding: 17px 33px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.hero .texts .icon {
+    padding-top: 16px;
+    margin-left: 28px;
+}
+
+.hero .texts .row-top .action {
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero .texts .desc1 {
+    margin-top: 48px;
+}
+
+.hero .texts .row-bottom {
+    display: flex;
+}
+
+.hero .texts .statis span {
+    color: #171100;
+    font-family: Sen, sans-serif;
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.hero .texts .statis {
+    margin-top: 8px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.hero .texts .statis + .statis {
+    margin-left: 28px;
+}
