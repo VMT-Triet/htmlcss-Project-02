@@ -101,17 +101,82 @@ a {
     display: flex;
 }
 
-.hero .image img {
+.hero .image {
+    position: relative;
+    width: 48%;
+}
+
+.hero .image .image1 {
     width: 470px;
     height: 685px;
     border-radius: 20px;
     object-fit: cover;
 }
 
+.hero .image .summary {
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    padding: 28px 24px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+    width: 270px;
+}
+
+.hero .image .item {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.hero .image .item:first-child {
+    margin-top: 0;
+}
+
+.hero .image .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.hero .image .item:first-child .icons {
+    background: #fff9e8;
+}
+
+.hero .image .item:nth-child(2) .icons {
+    background: #fcefff;
+}
+
+.hero .image .item:last-child .icons {
+    background: #ebeaff;
+}
+
+.hero .image .info {
+    margin-left: 16px;
+}
+
+.hero .image .info .label {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.hero .image .info .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
 .hero .texts {
-    padding-top: 128px;
-    margin-left: 130px;
-    width: 470px;
+    padding-top: 64px;
+    padding-left: 130px;
+    width: 52%;
 }
 
 .hero .texts .title {
@@ -148,8 +213,15 @@ a {
 }
 
 .hero .texts .icon {
-    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.07);
 }
 
 .hero .texts .row-top .action {
