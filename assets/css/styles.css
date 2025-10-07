@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #ffb900;
+    --font-heading: Sen, sans-serif;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -105,7 +110,7 @@ a {
 
 /* ======== Hero ======== */
 .hero {
-    padding: 64px 0 65px;
+    padding-top: 56px;
     background: #fffcf4;
 }
 
@@ -139,11 +144,10 @@ a {
 .hero .image .item {
     display: flex;
     align-items: center;
-    margin-top: 22px;
 }
 
-.hero .image .item:first-child {
-    margin-top: 0;
+.hero .image .item + .item {
+    margin-top: 22px;
 }
 
 .hero .image .icons {
@@ -153,14 +157,7 @@ a {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-}
-
-.hero .image .item:first-child .icons {
     background: #fff9e8;
-}
-
-.hero .image .item:nth-child(2) .icons {
-    background: #fcefff;
 }
 
 .hero .image .item:last-child .icons {
@@ -193,11 +190,11 @@ a {
 
 .hero .texts .title {
     color: #171100;
-    font-family: Sen, sans-serif;
+    font-family: var(--font-heading);
     font-size: 5.8rem;
     font-weight: 700;
     line-height: 1.17;
-    letter-spacing: -1.16px;
+    letter-spacing: -0.02em;
 }
 
 .hero .texts .desc {
