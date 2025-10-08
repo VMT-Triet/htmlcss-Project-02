@@ -509,109 +509,77 @@ a {
 
 /* ======== Features ======== */
 .features {
-    padding: 200px 0;
+    padding: 65px 0;
+    margin-top: 135px;
 }
 
 .features .body {
     display: flex;
+    justify-content: space-between;
 }
 
 .features .body .media-block {
-    width: 48%;
-    height: 438px;
     gap: 30px;
     display: flex;
-    align-items: flex-start;
 }
 
 .features .body .text {
-    width: 52%;
-    padding-left: 130px;
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .features .body .media-block .image {
     width: 270px;
-    height: 405px;
+    height: 404px;
     border-radius: 16px;
     object-fit: cover;
 }
 
-.features .body .media-block .image:first-child {
-    height: 404px;
-    align-self: flex-end;
+.features .body .media-block .image.lower {
+    margin-top: 34px;
 }
 
 .features .body .text .sub-title {
     margin-top: 58px;
     color: #171100;
-    font-family: Sen, sans-serif;
+    font-family: var(--font-heading);
     font-size: 3.8rem;
     font-weight: 700;
     line-height: 1.26;
-    letter-spacing: -0.76px;
+    letter-spacing: -0.02em;
 }
 
 .features .body .text .desc {
     margin-top: 16px;
     color: #5f5b53;
     font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.75;
 }
 
 .features .body .text .btn-fea {
     margin-top: 32px;
-    width: 137px;
+    min-width: 137px;
 }
 
 /* ======== CTA ======== */
 .cta {
-    padding-bottom: 200px;
+    margin-top: 70px;
 }
 
 .cta .body {
-    display: flex;
-}
-
-.cta .body .media-block {
-    width: 40%;
+    flex-direction: row-reverse;
 }
 
 .cta .body .text {
-    width: 60%;
-    padding-right: 130px;
+    width: 49%;
 }
 
-.cta .body .text .sub-title {
-    margin-top: 71px;
-    color: #171100;
-    font-family: Sen, sans-serif;
-    font-size: 3.8rem;
-    font-weight: 700;
-    line-height: 1.26;
-    letter-spacing: -0.76px;
-}
-
-.cta .body .text .desc {
-    margin-top: 16px;
-    color: #5f5b53;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75;
-}
-
-.cta .body .text .cta-btn {
-    margin-top: 32px;
-    width: 137px;
-}
-
-.cta .body .media-block .image {
+.cta .image {
     width: 470px;
     height: 440px;
-    border-radius: 20px;
-    object-fit: cover;
 }
 
 /* ======== Blog ======== */
